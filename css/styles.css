@@ -861,10 +861,37 @@ img {
 	border: 1px solid var(--first-color);
 }
 
-.check {
+.form-agreement {
 	display: flex;
+	align-items: center;
+	gap: 10px;
 	margin-top: 20px;
 	margin-bottom: 30px;
+	padding-left: 20px;
+}
+
+.agreement-icon-uncheck {
+	fill: var(--for-buttons);
+
+	transition: opacity;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.agreement-checkbox:checked + .agreement-icon .agreement-icon-uncheck {
+	opacity: 0;
+}
+
+.agreement-icon-check {
+	opacity: 0;
+	fill: var(--first-color);
+	transition: opacity;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.agreement-checkbox:checked + .agreement-icon .agreement-icon-check {
+	opacity: 1;
 }
 
 .form-submit {

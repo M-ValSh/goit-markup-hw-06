@@ -430,15 +430,15 @@
 						Коментар
 						<textarea class="feedback" placeholder="Введіть текст"></textarea>
 					</label>
-					<label class="check">
-						<svg class="check-icon" width="16" height="15">
-							<use href="./images/icons.svg#icon-square"></use>
-							<use href="./images/icons.svg#icon-check"></use>
+					<label class="form-agreement">
+						<input type="checkbox" name="check" class="agreement-checkbox visually-hidden" />
+						<svg class="agreement-icon" width="16" height="15">
+							<use href="./images/icons.svg#icon-square" class="agreement-icon-uncheck"></use>
+							<use href="./images/icons.svg#icon-check" class="agreement-icon-check"></use>
 						</svg>
-						<input type="checkbox" name="check" class="person-check" />
 						<p>
 							Погоджуюся з розсилкою та приймаю
-							<a href="#">Умови договору</a>
+							<a href="#" class="agreement-link">Умови договору</a>
 						</p>
 					</label>
 					<button type="submit" class="form-submit">Відправити</button>
