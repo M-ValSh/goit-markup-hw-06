@@ -735,7 +735,7 @@ img {
 	display: flex;
 }
 .footer .s-child {
-	margin-right: 93px;
+	margin-right: auto;
 }
 .email {
 	height: 50px;
@@ -797,9 +797,17 @@ img {
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 10px;
 
 	color: var(--second-color);
+
+	font-size: 12px;
+	line-height: 1.17;
+	letter-spacing: 0.01em;
+	text-align: left;
+}
+
+.human:not(:last-child) {
+	margin-bottom: 10px;
 }
 
 .person-input {
@@ -816,6 +824,11 @@ img {
 	transition-property: border;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.person-input:required,
+.agreement-checkbox:required {
+	border-color: var(--first-color);
 }
 
 .person-input:hover,
@@ -864,10 +877,10 @@ img {
 .form-agreement {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	gap: 10px;
 	margin-top: 20px;
 	margin-bottom: 30px;
-	padding-left: 20px;
 }
 
 .agreement-icon-uncheck {
@@ -894,12 +907,26 @@ img {
 	opacity: 1;
 }
 
+.agreement-link {
+	color: var(--first-color);
+
+	line-height: 1.71;
+	text-align: left;
+}
+
 .form-submit {
 	display: block;
 	padding: 10px 52px;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+
+	font-family: inherit;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.86;
+	letter-spacing: 0.06em;
+	text-align: center;
 
 	color: var(--main-background-color);
 	background-color: var(--first-color);
